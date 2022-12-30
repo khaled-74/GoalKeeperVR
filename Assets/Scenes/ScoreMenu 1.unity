@@ -1034,7 +1034,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 2135363190}
         m_TargetAssemblyTypeName: ScoreMenu, Assembly-CSharp
-        m_MethodName: AgainButoon
+        m_MethodName: Quit
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1483,7 +1483,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Again
+  m_text: Quit
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1686,6 +1686,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   score: 0
+  rounds: 0
+  ballSpawner: {fileID: 0}
 --- !u!65 &1532351263
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2996,6 +2998,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   yourScore: {fileID: 402383778}
   pcScore: {fileID: 1839384655}
+  pcNewScore: 0
+  newRounds: 0
 --- !u!1 &1125067350305689
 GameObject:
   m_ObjectHideFlags: 0

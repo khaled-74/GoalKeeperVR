@@ -37,7 +37,7 @@ public class BallSpawner : MonoBehaviour
     {
 
         GameObject ballInstance =  Instantiate(ball, transform.position, ball.transform.rotation);
-
+        StartCoroutine(WaitBall());
         float xpos = Random.Range(miniPos.position.x, maxPos.position.x);
         float ypos = Random.Range(miniPos.position.y, maxPos.position.y);
         float zpos = miniPos.position.z;
@@ -51,19 +51,24 @@ public class BallSpawner : MonoBehaviour
         Rounds--;
         if (Rounds == 0) 
         {
-            SceneManager.LoadScene(7);
+            StartCoroutine(GoToScoreScene());
             //Show Score or Repeat the scene 
         }
       
         // Invoke("Shoot", shootDelay);
         // Vector3 shoot = shootPos - transform.position;
         //  ball.GetComponent<Rigidbody>().AddForce(shoot * force, ForceMode.Impulse);
-  
-
-
     }
 
 
-
+    IEnumerator GoToScoreScene() 
+    {
+        yield return new WaitForSeconds(3);
+        SceneManager.LoadScene(7);
+    }
+    IEnumerator WaitBall() 
+    {
+        yield return new WaitForSeconds(3);
+    }
 
 }

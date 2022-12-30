@@ -33,9 +33,9 @@ public class ScoreMenu : MonoBehaviour
         SceneManager.LoadScene(0);
     }
     
-   public void AgainButoon() 
-    {
-        SceneManager.LoadScene(1);
-    }
 
+    public void Quit()
+    {
+        Application.Quit();
+    }
 }

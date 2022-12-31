@@ -23,13 +23,10 @@ public class ScoreMenu : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+
    public void MainMenuButton() 
     {
+        Destroy(Goal.goaaal);
         SceneManager.LoadScene(0);
     }
     

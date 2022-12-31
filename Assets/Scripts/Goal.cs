@@ -29,7 +29,6 @@ public class Goal : MonoBehaviour
         if (other.CompareTag("Ball")) 
         {
             goaaal.score++;
-          //  Debug.Log(score);
             Destroy(other.gameObject);
         }
     }

@@ -52,12 +52,9 @@ public class BallSpawner : MonoBehaviour
         if (Rounds == 0) 
         {
             StartCoroutine(GoToScoreScene());
-            //Show Score or Repeat the scene 
         }
       
-        // Invoke("Shoot", shootDelay);
-        // Vector3 shoot = shootPos - transform.position;
-        //  ball.GetComponent<Rigidbody>().AddForce(shoot * force, ForceMode.Impulse);
+
     }
 
 
